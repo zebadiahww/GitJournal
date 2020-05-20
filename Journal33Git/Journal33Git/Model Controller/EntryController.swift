@@ -32,4 +32,8 @@ class EntryController {
         guard let index = entries.firstIndex(of: entry) else { return }
         entries.remove(at: index)
     }
+    
+    func doSomethingElse() {
+        
+    }
 }
