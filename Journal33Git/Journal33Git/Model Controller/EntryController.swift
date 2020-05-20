@@ -17,15 +17,16 @@ class EntryController {
     
     
     //TODO - fill out method logic
-    func create() {
-        
+    func create(title: String, body: String) {
+        let newEntry = Entry(title: title, body: body)
+        entries.append(newEntry)
     }
     
-    func update() {
-        
+    func update(entry: Entry, title: String, body: String) {
+        // TODO: Finish update function after model is made Equatable.
     }
     
     func delete() {
-        
+        // TODO: Finish update function after model is made Equatable.
     }
 }
