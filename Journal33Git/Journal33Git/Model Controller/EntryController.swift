@@ -35,4 +35,7 @@ class EntryController {
     func doSomethign() {
         print("HelloWorld")
     }
+  
+    func doSomethingElse() {
+    }
 }
