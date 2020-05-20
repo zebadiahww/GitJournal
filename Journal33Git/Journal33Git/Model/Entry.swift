@@ -19,4 +19,8 @@ class Entry {
     }
 }
 
-// TODO: Make model equatable.
+extension Entry: Equatable {
+    static func == (lhs: Entry, rhs: Entry) -> Bool {
+        return lhs.title == rhs.title && lhs.body == rhs.body
+    }
+}
