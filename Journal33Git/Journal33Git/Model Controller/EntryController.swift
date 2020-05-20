@@ -23,10 +23,13 @@ class EntryController {
     }
     
     func update(entry: Entry, title: String, body: String) {
-        // TODO: Finish update function after model is made Equatable.
+        guard let index = entries.firstIndex(of: entry) else { return }
+        entries[index].title = title
+        entries[index].body = body
     }
     
-    func delete() {
-        // TODO: Finish update function after model is made Equatable.
+    func delete(entry: Entry) {
+        guard let index = entries.firstIndex(of: entry) else { return }
+        entries.remove(at: index)
     }
 }
