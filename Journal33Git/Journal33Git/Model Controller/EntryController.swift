@@ -16,7 +16,6 @@ class EntryController {
     var entries: [Entry] = []
     
     
-    //TODO - fill out method logic
     func create(title: String, body: String) {
         let newEntry = Entry(title: title, body: body)
         entries.append(newEntry)
@@ -33,7 +32,10 @@ class EntryController {
         entries.remove(at: index)
     }
     
+    func doSomethign() {
+        print("HelloWorld")
+    }
+  
     func doSomethingElse() {
-        
     }
 }
