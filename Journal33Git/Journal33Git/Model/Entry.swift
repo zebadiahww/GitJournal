@@ -18,3 +18,5 @@ class Entry {
         self.body = body
     }
 }
+
+// TODO: Make model equatable.
